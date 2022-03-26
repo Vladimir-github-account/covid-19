@@ -1,0 +1,38 @@
+.navToggle {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  min-width: 44px;
+  max-width: 44px;
+  z-index: 99999;
+
+
+  span {
+    width: 24px;
+    height: 4px;
+    background-color: #000000;
+    z-index: 10;
+    transition: all 0.3s;
+  }
+}
+
+.navToggle > span ~ span {
+  margin-top: 4px;
+}
+
+// nav toggle animation
+.displayed + .navToggle {
+  span:nth-child(1) {
+    transform: translateY(7px) rotate(135deg);
+  }
+
+  span:nth-child(2) {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  span:nth-child(3) {
+    transform: translateY(-7px) rotate(-135deg);
+  }
+}
