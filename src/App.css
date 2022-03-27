@@ -1,4 +1,6 @@
 @import "reset.css";
 .wrapper{
   margin: 0 42.5px;
+  color: #111111;
+  word-wrap: break-word;
 }

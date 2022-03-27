@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Main.module.sass';
-
+import InfoContainer from "../InfoContainer";
 
 const Main = () => {
-    const {main, imageContainer, img, gridBg, bg, infoContainer} = styles;
+    const {main, imageContainer, img, gridBg, bg} = styles;
     return (
         <main className={main}>
             <div className={imageContainer}>
@@ -14,7 +14,7 @@ const Main = () => {
             <div className={gridBg}>
                 <div className={bg}/>
             </div>
-            <div className={infoContainer}></div>
+            <InfoContainer/>
         </main>
     );
 };
