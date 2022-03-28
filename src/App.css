@@ -3,10 +3,16 @@
 body{
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  font-size: 16px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+a{
+  text-decoration: none;
 }
 
 .wrapper{
   margin: 0 42.5px;
   color: #111111;
-  word-wrap: break-word;
 }
