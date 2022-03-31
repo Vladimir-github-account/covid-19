@@ -1,11 +1,15 @@
+@import "../../variables"
+
 .logo
   max-width: 64px
   height: 32px
 
-
 .header
   min-width: 100%
   max-width: 100%
-  padding: 22px 42.5px 0 42.5px
+  padding: 22px 22.5px 0 22.5px
   display: flex
   justify-content: space-between
+
+  @media screen and (min-width: $sm)
+    padding: 22px 42.5px 0 42.5px
