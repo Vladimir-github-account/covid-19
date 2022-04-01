@@ -3,18 +3,40 @@
   margin-top: 29px
   display: flex
   flex-direction: column
-  align-items: center
+  align-items: flex-start
+  @media screen and (min-width: $md)
+    position: absolute
+    top: 240px
+    left: 50%
+  @media screen and (min-width: $lg)
+    left: 53%
+  @media screen and (min-width: $xl)
+    left: 46%
 
 .mainHeader
   font-family: Oswald, sans-serif
   font-size: 2.375rem
   line-height: 2.375rem
-  margin-bottom: 48px
+  margin-bottom: 18px
   width: 265px
   @media screen and (min-width: $sm)
     width: 450px
     font-size: 3.75rem
     line-height: 3.75rem
+  @media screen and (min-width: $md)
+    font-size: 2.75rem
+    line-height: 2.75rem
+    width: 348px
+    margin-bottom: 48px
+  @media screen and (min-width: $lg)
+    width: 500px
+    font-size: 65px
+    line-height: 65px
+
+.wrapper
+  padding: 30px
+  align-self: flex-start
+  background-color: #fff
 
 .info
   font-size: 18px
@@ -22,7 +44,11 @@
   width: 265px
   max-width: 100%
   @media screen and (min-width: $sm)
-    align-self: flex-start
     width: 360px
+  @media screen and (min-width: $md)
+    font-size: 1.25rem
+    width: 280px
+  @media screen and (min-width: $lg)
+    width: 460px
 
 

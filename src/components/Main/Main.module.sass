@@ -9,11 +9,21 @@
   width: 70vw
   max-width: 457px
   min-height: 448px
+  @media screen and (min-width: $md)
+    width: 42vw
+  @media screen and (min-width: $lg)
+    width: 710px
+    max-width: 710px
+
 
 .img
   max-width: 100%
   position: relative
-  top: 50px
+  top: 66px
+  @media screen and (min-width: $md)
+    object-fit: cover
+    height: 74vw
+    max-height: 650px
 
 .gridBg
   margin: 100px 0 0 50px
@@ -25,6 +35,8 @@
   background-color: #E0E5EB
   width: 70vw
   height: calc(70vw * 1.5 + 105px)
-
-  @media screen and (min-width: $sm)
   max-height: 786px
+  @media screen and (min-width: $md)
+    width: 35vw
+    height: calc(74vw + 132px)
+    margin-left: 155px
